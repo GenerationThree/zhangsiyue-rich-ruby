@@ -12,7 +12,7 @@ class Player
     @status = response.execute(self)
   end
 
-  def getStatus
+  def get_status
     @status
   end
 
