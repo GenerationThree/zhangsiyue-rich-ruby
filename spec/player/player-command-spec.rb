@@ -15,6 +15,7 @@ describe Player do
 
   it 'should record last executed command' do
     @rollcommand.expect(:execute, "WAIT_RESPONSE", [@player])
+    @rollcommand.expect(:must_equal, true, [@rollcommand])
     @player.execute(@rollcommand)
     @player.getStatus.must_equal "WAIT_RESPONSE"
     @player.get_last_executed.must_equal @rollcommand
