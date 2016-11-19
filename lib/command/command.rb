@@ -1,5 +1,10 @@
 class Command
-  def execute(player)
+  def initialize(*commands)
+
+  end
+
+  def execute(player, *paramters)
     ""
   end
+
 end
